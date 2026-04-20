@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book an Appointment - NovaSilk Wellness</title>
+    <meta
+      name="description"
+      content="Book your spa appointment at NovaSilk Wellness. Easy online booking for all our services."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <header>
+      <div class="navbar">
+        <a href="index.html" class="logo">NovaSilk</a>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="book.html" class="active">Book Now</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Page Header -->
+    <section
+      class="hero"
+      style="
+        padding: 80px 2rem;
+        background:
+          linear-gradient(rgba(44, 36, 22, 0.6), rgba(44, 36, 22, 0.6)),
+          url(&quot;https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=1200&h=400&fit=crop&quot;)
+            center/cover;
+      "
+    >
+      <h1>Book Your Appointment</h1>
+      <p>Reserve your perfect spa experience</p>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="container py-3">
+      <div class="step-indicator">
+        <div class="step completed">1</div>
+        <div class="step active">2</div>
+        <div class="step">3</div>
+      </div>
+
+      <div class="booking-container">
+        <!-- Booking Form -->
+        <div>
+          <form id="bookingForm">
+            <h2 style="text-align: center; margin-bottom: 1.5rem">
+              Appointment Details
+            </h2>
+
+            <div class="form-group">
+              <label for="service">Select Service *</label>
+              <select id="service" name="service" required>
+                <option value="">-- Choose a Service --</option>
+                <optgroup label="Massage Therapy">
+                  <option value="Swedish Massage - ₦62,300">
+                    Swedish Massage - ₦62,300
+                  </option>
+                  <option value="Deep Tissue Massage - ₦69,300">
+                    Deep Tissue Massage - ₦69,300
+                  </option>
+                  <option value="Hot Stone Massage - ₦72,800">
+                    Hot Stone Massage - ₦72,800
+                  </option>
+                  <option value="Thai Massage - ₦65,800">
+                    Thai Massage - ₦65,800
+                  </option>
+                </optgroup>
+                <optgroup label="Facial Treatments">
+                  <option value="Premium Facial - ₦66,500">
+                    Premium Facial - ₦66,500
+                  </option>
+                  <option value="HydraFacial - ₦91,000">
+                    HydraFacial - ₦91,000
+                  </option>
+                  <option value="Chemical Peel - ₦84,000">
+                    Chemical Peel - ₦84,000
+                  </option>
+                  <option value="Microdermabrasion - ₦77,000">
+                    Microdermabrasion - ₦77,000
+                  </option>
+                </optgroup>
+                <optgroup label="Body Treatments">
+                  <option value="Exfoliating Body Scrub - ₦52,500">
+                    Exfoliating Body Scrub - ₦52,500
+                  </option>
+                  <option value="Hydrating Body Wrap - ₦59,500">
+                    Hydrating Body Wrap - ₦59,500
+                  </option>
+                  <option value="Detoxifying Mud Wrap - ₦56,000">
+                    Detoxifying Mud Wrap - ₦56,000
+                  </option>
+                  <option value="Aromatherapy Package - ₦63,000">
+                    Aromatherapy Package - ₦63,000
+                  </option>
+                </optgroup>
+                <optgroup label="Specialty Services">
+                  <option value="Luxury Manicure - ₦28,000">
+                    Luxury Manicure - ₦28,000
+                  </option>
+                  <option value="Luxury Pedicure - ₦35,000">
+                    Luxury Pedicure - ₦35,000
+                  </option>
+                  <option value="Professional Waxing - ₦24,500">
+                    Professional Waxing - ₦24,500
+                  </option>
+                  <option value="Hair Treatment - ₦42,000">
+                    Hair Treatment - ₦42,000
+                  </option>
+                </optgroup>
+                <optgroup label="Wellness Packages">
+                  <option value="Relaxation Escape Package - ₦174,300">
+                    Relaxation Escape Package - ₦174,300
+                  </option>
+                  <option value="Luxury Indulgence Package - ₦209,300">
+                    Luxury Indulgence Package - ₦209,300
+                  </option>
+                  <option value="Ultimate Wellness Package - ₦279,300">
+                    Ultimate Wellness Package - ₦279,300
+                  </option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="date">Preferred Date *</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+
+            <div class="form-group">
+              <label for="time">Preferred Time *</label>
+              <select id="time" name="time" required>
+                <option value="">-- Select Time --</option>
+                <option value="9:00 AM">9:00 AM</option>
+                <option value="9:30 AM">9:30 AM</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="10:30 AM">10:30 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="11:30 AM">11:30 AM</option>
+                <option value="12:00 PM">12:00 PM</option>
+                <option value="2:00 PM">2:00 PM</option>
+                <option value="2:30 PM">2:30 PM</option>
+                <option value="3:00 PM">3:00 PM</option>
+                <option value="3:30 PM">3:30 PM</option>
+                <option value="4:00 PM">4:00 PM</option>
+                <option value="4:30 PM">4:30 PM</option>
+                <option value="5:00 PM">5:00 PM</option>
+                <option value="5:30 PM">5:30 PM</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="therapist">Therapist Preference</label>
+              <select id="therapist" name="therapist">
+                <option value="No Preference">No Preference</option>
+                <option value="Lydia C.">Lydia C. - Massage Specialist</option>
+                <option value="Pere J.">Pere J. - Facial Expert</option>
+                <option value="Darlington J.">Darlington J. - Wellness Coach</option>
+                <option value="Obianuju O.">
+                  Obianuju O. - Body Treatment Specialist
+                </option>
+              </select>
+            </div>
+
+            <h2
+              style="text-align: center; margin-bottom: 1.5rem; margin-top: 2rem"
+            >
+              Your Information
+            </h2>
+
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" required />
+            </div>
+
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+
+            <div class="form-group">
+              <label for="notes">Special Requests (Optional)</label>
+              <textarea
+                id="notes"
+                name="notes"
+                placeholder="Let us know any special preferences or health concerns..."
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label
+                style="display: flex; align-items: center; font-weight: 400"
+              >
+                <input
+                  type="checkbox"
+                  name="consent"
+                  required
+                  style="width: auto; margin-right: 10px"
+                />
+                I agree to the terms and conditions and privacy policy
+              </label>
+            </div>
+
+            <button
+              type="submit"
+              class="btn"
+              style="width: 100%; padding: 12px; font-size: 1.1rem"
+            >
+              Complete Booking
+            </button>
+          </form>
+        </div>
+
+        <!-- Booking Information -->
+        <div>
+          <div class="booking-info">
+            <h3>Service Summary</h3>
+            <p id="serviceSummary">Select a service above to see details</p>
+
+            <h3 style="margin-top: 2rem">Session Duration</h3>
+            <p id="durationInfo">
+              Service times vary from 30 to 70 minutes depending on the
+              treatment selected.
+            </p>
+
+            <h3 style="margin-top: 2rem">Pricing</h3>
+            <p id="priceInfo">
+              Prices range from ₦24,500 to ₦279,300 for our services and
+              packages.
+            </p>
+
+            <h3 style="margin-top: 2rem">Booking Process</h3>
+            <p><strong>Step 1:</strong> Choose your service</p>
+            <p>
+              <strong>Step 2:</strong> Select date and time (Currently here)
+            </p>
+            <p><strong>Step 3:</strong> Enter your details and confirm</p>
+
+            <h3 style="margin-top: 2rem">Need Help?</h3>
+            <p>
+              Call us at <strong>(329) 210-6674</strong> or email
+              <strong>novasilkwellness@gmail.com</strong>
+            </p>
+
+            <h3 style="margin-top: 2rem">Frequently Asked</h3>
+            <p>
+              <strong>Can I change my appointment?</strong><br />Yes! Contact us
+              at least 48 hours in advance.
+            </p>
+            <p style="margin-top: 1rem">
+              <strong>What's your cancellation policy?</strong><br />Free
+              cancellations up to 24 hours before your appointment.
+            </p>
+            <p style="margin-top: 1rem">
+              <strong>Do you offer gift certificates?</strong><br />Yes! Contact
+              us for details on our gift packages.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Book With Us -->
+    <section
+      class="container"
+      style="background-color: #f9f7f4; padding: 60px 2rem; margin-top: 2rem"
+    >
+      <h2>Why Book With Us</h2>
+      <div class="cards-grid">
+        <div
+          style="
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+          "
+        >
+          <h3 style="color: var(--primary-color); margin-bottom: 1rem">
+            Easy Online Booking
+          </h3>
+          <p>Book your appointment in just a few clicks, available 24/7.</p>
+        </div>
+        <div
+          style="
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+          "
+        >
+          <h3 style="color: var(--primary-color); margin-bottom: 1rem">
+            Flexible Scheduling
+          </h3>
+          <p>Choose from multiple time slots throughout the week.</p>
+        </div>
+        <div
+          style="
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+          "
+        >
+          <h3 style="color: var(--primary-color); margin-bottom: 1rem">
+            Secure & Private
+          </h3>
+          <p>Your personal and payment information is fully protected.</p>
+        </div>
+        <div
+          style="
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+          "
+        >
+          <h3 style="color: var(--primary-color); margin-bottom: 1rem">
+            Instant Confirmation
+          </h3>
+          <p>Receive confirmation email reminders for your appointment.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>NovaSilk Wellness</h3>
+          <p>Your destination for premium wellness and relaxation services.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <p><a href="services.html">Services</a></p>
+          <p><a href="book.html">Book Now</a></p>
+          <p><a href="contact.html">Contact Us</a></p>
+        </div>
+        <div class="footer-section">
+          <h3>Reach Us</h3>
+          <p><a href="mailto:novasilkwellness@gmail.com">Email Us</a></p>
+          <p>
+            <a href="https://wa.me/13292106674" target="_blank">WhatsApp</a>
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <p>📞 (329) 210-6674</p>
+          <p>📧 novasilkwellness@gmail.com</p>
+          <p>📍 3 Merit Close, Obasanjo Road, Abuja, Nigeria</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 NovaSilk Wellness. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
